@@ -21,6 +21,12 @@ function clicked(event){
             break;
         case "+/-": 
             display.textContent = display.textContent * -1;
+            if(secondOperand){
+                secondOperand = display.textContent;
+            }
+            else{
+                firstOperand = display.textContent;
+            }
             break;
         case "%":
             display.textContent = display.textContent / 100;
